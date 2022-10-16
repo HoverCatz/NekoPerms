@@ -1,0 +1,10 @@
+{
+  "strings": {
+    "plugin_init": "Plugin successfully initialized",
+    "user_not_loaded_yet": "User is not ready yet...",
+    "no_permission": "You don't have permission to run that command."
+  },
+  "permissions": {
+    "access": "nekoperms.access"
+  }
+}
