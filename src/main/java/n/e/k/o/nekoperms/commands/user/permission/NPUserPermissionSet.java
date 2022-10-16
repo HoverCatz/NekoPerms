@@ -41,14 +41,6 @@ public class NPUserPermissionSet implements Command<CommandSource>
         }
 
         String node = ctx.getArgument("node", String.class).toLowerCase();
-
-        boolean hasNode = user.hasPermission(node);
-        if (hasNode)
-        {
-            source.sendFeedback(StringColorUtils.getColoredString("NPUserPermissionSet. Username: " + user.getUsernameOrUUID() + ", node: '" + node + "', hasNode: true"), true);
-            return SINGLE_SUCCESS;
-        }
-
         user.setPermission(node);
 
         source.sendFeedback(StringColorUtils.getColoredString("NPUserPermissionSet. Username: " + user.getUsernameOrUUID() + ", node: '" + node + "'."), true);
